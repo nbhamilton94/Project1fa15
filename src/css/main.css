@@ -1,4 +1,4 @@
-/*
+﻿/*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
@@ -87,17 +87,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
+ul li{
+     list-style: none;
+     display: inline;
+}
 
 
 
