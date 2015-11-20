@@ -87,6 +87,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+h1, h2, h3, p  {font-family: 'Raleway', sans-serif;} 
+
 ul li{
      list-style: none;
      display: inline;
