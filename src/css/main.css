@@ -87,6 +87,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+body {
+ margin: 5% 5% 5% 5%;
+}
+
 h1, h2, h3, h4, p  {font-family: 'Raleway', sans-serif;} 
 
 ul li{
@@ -97,8 +102,10 @@ ul li{
 
 ul li a {font-family: 'Raleway', sans-serif; }
 
-
-
+.informationleft{float:left;}
+.informationright{float: right; }
+.socialmedia{ float: right;}
+.cta{float: left;}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
