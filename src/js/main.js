@@ -1,5 +1,6 @@
-//carosel
 var main = function() {
+
+	//carosel
 	var intv;
 	var current = 0;  // STARTING SLIDE(<li>element button) INDEX
 	var slN = $('div.slider slide').length; // get number of slides(buttons.. all the same)
@@ -59,22 +60,37 @@ var main = function() {
    // This is a functions that scrolls to #{blah}link
 function goToByScroll(id){
       // Remove "link" from the ID
+		next = id;
+		
         id = id.replace("link", "");
           // Scroll
-	 curr = $("nav > div > ul > li.active"));
+		
 		if(id === "home")
 		{
 			$('html,body').animate({
             scrollTop: 0},
             'slow');
+			$("li.active").removeClass('active');
+			
+			$("a#"+next).closest("li").addClass('active');
+		}
+		else if (id === "about")
+		{
+			$('html,body').animate({
+				scrollTop: $("#"+id).offset().top-2*($("#x").height())},
+				'slow');
+			$("li.active").removeClass('active');
+			
+			$("a#"+next).closest("li").addClass('active');			
 		}
 		else
 		{
 			$('html,body').animate({
-				scrollTop: $("#"+id).offset().top-20},
+				scrollTop: $("#"+id).offset().top-$("#x").height()},
 				'slow');
-			curr.removeClass('active');
-			$(id+"link").addClass('active');
+			$("li.active").removeClass('active');
+			
+			$("a#"+next).closest("li").addClass('active');
 		}
 }
 
@@ -86,6 +102,28 @@ $("nav > div > ul > li > a").click(function(e) {
     goToByScroll(this.id);}
 });
 
+	//Locking the navigation bar into place
+	var lock = $('#about').offset().top-200; //get the location of the div with the id #about
+	var stickynav = function(){
+		var currentposition = $(window).scrollTop();
+		
+		if (lock <= currentposition)
+		{
+			$("#G").addClass("navbar-fixed-top");
+		}
+		else
+		{
+			if (lock > currentposition)
+			{
+				$("#G").removeClass("navbar-fixed-top");
+			}
+		}
+	}
+	stickynav();
+	
+	$(window).scroll(function(){
+		stickynav();
+	});
 }
 
 
