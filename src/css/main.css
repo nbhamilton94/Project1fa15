@@ -161,7 +161,7 @@ ul li a {font-family: 'Raleway', sans-serif; }
 }
 .portfoliobkg {
 	
-	
+	filter: opacity(85%);
 	border:1px solid #CCC;
 	background: url('../img/portfolio.jpg');
 	background-repeat: no-repeat;
@@ -170,7 +170,9 @@ ul li a {font-family: 'Raleway', sans-serif; }
 	
 
 }
-
+ul.portfoliolist li{ 
+	display: block;
+}
 .testemonial {
 	background: url('../img/testemonials.jpg');
 	background-size: cover;
@@ -317,8 +319,8 @@ img.thmb{border-radius: 50%;}
 /* Contact Us Button*/
 .glyphicon:hover { color:red;}
 .pull-right li a img{float: right;}
-.back{width:100%;height:100%;z-index:10;position:absolute;opacity:0.4;}
-.over{z-index:11; }
+
+
 .overlay-back { 
     top        : 100%; 
     left       : 100%; 
