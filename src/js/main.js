@@ -1,6 +1,6 @@
 var main = function() {
 
-	//carosel
+	//carosel //commmit
 	var intv;
 	var current = 0;  // STARTING SLIDE(<li>element button) INDEX
 	var slN = $('div.slider slide').length; // get number of slides(buttons.. all the same)
