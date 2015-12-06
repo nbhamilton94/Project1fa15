@@ -171,6 +171,7 @@ ul li a {font-family: 'Raleway', sans-serif; }
 
 }
 ul.portfoliolist li{ 
+	font-size: 200%;
 	display: block;
 }
 .testemonial {

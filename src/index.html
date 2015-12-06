@@ -161,25 +161,23 @@
 	<!--Portfolio-->
 	<h2 id ="portfolio" align="center"> Portoflio </h2>
 	
-	<div class="portfoliobkg">
 	
-		<div class="container">
-			<div class="col-md-12">
-					<h3 class ="portfoliotext" align ="center">
-						What about our past work?
-					</h3>
-					
-					<h1> websites we designed 
-						<ul class="portfoliolist">
-							<li>sample</li>
-							<li>sample</li>
-							<li>sample</li>
-							<li>sample</li>
-						<ul>
-					</h1>
+		<div class="jumbotron portfoliobkg">
+			<div class="container">
+				<div class="col-md-12">
+
+						
+						<h1> Websites we designed </h1>
+							<ul class="portfoliolist">
+								
+								<li><a data-toggle="modal" data-target="#loremmodal" href="#">Lorem.com</a></li>
+								<li><a data-toggle="modal" data-target="#fitnessmodal" href="#">Fitness.com</a></li>
+								<li><a data-toggle="modal" data-target="#foodmodal" href="#">Food.com</a></li>
+							<ul>
+						
+				</div>
 			</div>
 		</div>
-	</div>
 	
 	
 	<!--Testemonials-->
@@ -255,38 +253,96 @@
 	
 	<!-- Modal -->
 	<div id="myModal" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		<div class="modal-dialog">
 		
-        <h4 class="modal-title">Contact Us</h4>
-      </div>
-      <div class="modal-body">
-		<div class="form-group">
-		  <label for="usr">Your Name:</label>
-		  <input type="text" class="form-control" id="usr">
-		</div>
-		<div class="form-group">
-		  <label for="email">Your Email:</label>
-		  <input type="email" class="form-control" id="email">
-		</div>
-		 <div class="form-group">
-		  <label for="comment">Comment:</label>
-		  <textarea class="form-control" rows="5" id="comment"></textarea>
-		</div>
-      </div>
-      <div class="modal-footer">
-		<button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					
+					<h4 class="modal-title">Contact Us</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="usr">Your Name:</label>
+						<input type="text" class="form-control" id="usr">
+					</div>
+					<div class="form-group">
+						<label for="email">Your Email:</label>
+						<input type="email" class="form-control" id="email">
+					</div>
+					<div class="form-group">
+						<label for="comment">Comment:</label>
+						<textarea class="form-control" rows="5" id="comment"></textarea>
+					</div>
+				</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+			</div>
 
-	</div>
+		</div>
 	</div>
 	
+	<div id="loremmodal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Lorem.com</h4>
+				</div>
+				
+				<div class="modal-body">
+
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="fitnessmodal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Fitness.com</h4>
+				</div>
+				
+				<div class="modal-body">
+					The revamped fitness website.
+					
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	<div id="foodmodal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Food.com</h4>
+				</div>
+				
+				<div class="modal-body">
+				<p align="center">The revamped food website.</p>
+				<img src="img/foodwebsite.jpg">
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>	
         <script src="js/plugins.js"></script>
        
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
